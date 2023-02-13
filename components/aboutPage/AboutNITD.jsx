@@ -1,5 +1,6 @@
 import Image from "next/image"
-import bg from '@/public/pang-yuhao-_kd5cxwZOK4-unsplash.jpg'
+import nitdAdmin from '@/public/nitd_admin.jpg'
+import nitdAcad from '@/public/nitd_acad.jpg'
 export default function AboutNITD() {
     return (
         <>
@@ -7,7 +8,7 @@ export default function AboutNITD() {
            
                 <div className="flex flex-col md:flex-col mt-4  container">
                     <h3 className="text-3xl px-6 font-bold text-center md:text-4xl md:text-left">
-                        About National Institute of Technology,Delhi
+                        About National Institute of Technology, Delhi
                     </h3>
                     <div className="bg-primary10 py-3 mt-10">
                         <p className="text-center px-6  mx-auto text-black lg:text-lg md:text-left">
@@ -21,15 +22,16 @@ export default function AboutNITD() {
                                 NIT Delhi started its academic session in 2010 and it was operating from its transit campus at Narela, Delhi until recently. The institute has now completely shifted to its permanent campus situated on NH-1 (GT Karnal Road), Narela sub-city, New Delhi. The institute offers B. Tech. programmes in three areas of technology (Computer Science and Engineering, Electronics and Communication Engineering, and Electrical Engineering), M. Tech. programmes in five disciplines, along with Ph.D. programmes in all branches of Science and Engineering. The institute is all set to start B. Tech. programmes in two new branches (Mechanical Engineering and Civil Engineering) from academic session 2022-23.
                             </p>
                             </div>
-                            <div>
-                                <Image src={bg} className="flex-1 object-cover object-scale-down" />
+                            <div className="flex-1">
+                                <Image src={nitdAdmin} className="object-cover" />
                             </div>
+                           
                         </div>
                     </div>
                     <div className="bg-primary10">
                     <div className="grid grid-cols-2">
                     <div className="flex-1">
-                                <Image src={bg} className="object-cover" />
+                                <Image src={nitdAcad} className="object-cover" />
                             </div>
                         <div className="flex-1">
                             <p className="text-center  p-6 py-6 text-black lg:text-lg md:text-left">
@@ -51,7 +53,7 @@ export default function AboutNITD() {
            
         <div className="flex flex-col md:flex-col mt-4  container">
         <h3 className="text-2xl px-6 font-bold text-center md:text-3xl md:text-left">
-         About Department of Applied Sciences,Nit Delhi
+         About Department of Applied Sciences, NIT Delhi
         </h3>
         <div className="bg-primary10 py-3 mt-10">
                         <p className="text-center px-6  mx-auto text-black lg:text-lg md:text-left">
