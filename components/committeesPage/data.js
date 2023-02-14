@@ -14,11 +14,11 @@ import devansh from "@/public/profile_images/student_committee/devansh.jpg"
 import hardik from "@/public/profile_images/student_committee/hardik.jpeg"
 import shivansh from '@/public/Committe pics/Shivansh.jpg'
 import risabh from '@/public/Committe pics/risabh.jpg'
-import richa from '@/public/Committe pics/richa.jpg'
+import richa from '@/public/Committe pics/richa.png'
 import madhviraj from '@/public/Committe pics/madhviraj.jpg'
 import vishal from '@/public/Committe pics/vishal.jpg'
 import devesh from '@/public/Committe pics/devesh.jpg'
-import bhavnajoshi from '@/public/Committe pics/bhavnajoshi.jpg'
+import bhavnajoshi from '@/public/Committe pics/bhavanajoshi.png'
 import manu from '@/public/Committe pics/manu.png'
 import dhruv from '@/public/Committe pics/dhruv tyagi.jpeg'
 
@@ -30,7 +30,7 @@ export const organisingCommittee = [
             {
                 name: 'Prof. (Dr.) Ajay K. Sharma',
                 designation: 'Director',
-                affiliation: 'National Institute of Technology, Delhi',
+                affiliation: 'National Institute of Technology Delhi',
                 photo:ajaysharma
                 
             },
@@ -48,7 +48,7 @@ export const organisingCommittee = [
             {
                 name: 'Prof. Praveen Garg',
                 designation: 'Principal',
-                affiliation: 'Swami Shraddhanand College, DU',
+                affiliation: 'Swami Shraddhanand College,University of Delhi',
                 photo:praveen
             }
         ]
@@ -65,12 +65,12 @@ export const organisingCommittee = [
         ]
     },
     {
-        type: 'Co-conveners',
+        type: 'Co-Conveners',
         members: [
             {
                 name: 'Dr. Anuj K. Sharma',
                 designation: 'Associate Professor',
-                affiliation: 'National Institute of Technology, Delhi',
+                affiliation: 'Department of Applied Sciences, NIT Delhi',
                 photo:anujsharma
                 
             },
@@ -124,38 +124,40 @@ export const organisingCommittee = [
     },
 ]
 
+const nitdLabel = {line1: "National Instutite of Technology", line2: "Delhi"}
+const ssduLabel = {line1: "Swami Shradhanand College", line2: "University of Delhi"}
 export const localOrganisingCommittee = {
     nitDelhi: [
-            {name: "Dr. V. S. Pandey"},
-            {name: "Dr. Gyanendra Sheoran"},
-            {name: "Dr. Amit Mahajan"},
-            {name: "Dr. Prashant Kumar"},
-            {name: "Dr. Saloni Priya"},
-            {name: "Dr. Ritu Goel"},
-            {name: "Mr. Krishan Pal"},
-            {name: "Mr. Jitender Singh Bisht"},
-            {name: "Mr. Aadesh Kumar"},
-            {name: "Mrs. Aparna Tripathi"},
-            {name: "Mr. Shubham Bhardwaj"},
-            {name: "Mrs. Navisha Sharma"},
-            {name: "Mr. Lov Kumar Dubey"},
-            {name: "Mr. Praveen Kumar"},
+            {name: "Dr. V. S. Pandey", affiliation: nitdLabel},
+            {name: "Dr. Gyanendra Sheoran", affiliation: nitdLabel},
+            {name: "Dr. Amit Mahajan", affiliation: nitdLabel},
+            {name: "Dr. Prashant Kumar", affiliation: nitdLabel},
+            {name: "Dr. Saloni Priya", affiliation: nitdLabel},
+            {name: "Dr. Ritu Goel", affiliation: nitdLabel},
+            {name: "Mr. Krishan Pal", affiliation: nitdLabel},
+            {name: "Mr. Jitender Singh Bisht", affiliation: nitdLabel},
+            {name: "Mr. Aadesh Kumar", affiliation: nitdLabel},
+            {name: "Mrs. Aparna Tripathi", affiliation: nitdLabel},
+            {name: "Mr. Shubham Bhardwaj", affiliation: nitdLabel},
+            {name: "Mrs. Navisha Sharma", affiliation: nitdLabel},
+            {name: "Mr. Lov Kumar Dubey", affiliation: nitdLabel},
+            {name: "Mr. Praveen Kumar", affiliation: nitdLabel},
         ],
     sscdu: [
-        {name: "Dr. Chandra Shekhar Jeengar"},
-        {name: "Dr. Gajendra Gaur"},
-        {name: "Dr. Pradeep Pratap Singh"},
-        {name: "Dr. Saraswati Kanodia"},
-        {name: "Dr. Suman Yadav"},
-        {name: "Dr. Seema Gupta"},
-        {name: "Dr. Govind Ji Rai"},
-        {name: "Dr. Narbir Singh"},
-        {name: "Dr. Aanchal Sethi"},
-        {name: "Dr. Bholey Singh"},
-        {name: "Dr. Mukesh Kumar Verma"},
-        {name: "Dr. Partibha"},
-        {name: "Dr. Ramesh Chand"},
-        {name: "Mr. Amar Singh Meena"},
+        {name: "Dr. Chandra Shekhar Jeengar", affiliation: ssduLabel},
+        {name: "Dr. Gajendra Gaur", affiliation: ssduLabel},
+        {name: "Dr. Pradeep Pratap Singh", affiliation: ssduLabel},
+        {name: "Dr. Saraswati Kanodia", affiliation: ssduLabel},
+        {name: "Dr. Suman Yadav", affiliation: ssduLabel},
+        {name: "Dr. Seema Gupta", affiliation: ssduLabel},
+        {name: "Dr. Govind Ji Rai", affiliation: ssduLabel},
+        {name: "Dr. Narbir Singh", affiliation: ssduLabel},
+        {name: "Dr. Aanchal Sethi", affiliation: ssduLabel},
+        {name: "Dr. Bholey Singh", affiliation: ssduLabel},
+        {name: "Dr. Mukesh Kumar Verma", affiliation: ssduLabel},
+        {name: "Dr. Partibha", affiliation: nitdLabel},
+        {name: "Dr. Ramesh Chand", affiliation: ssduLabel},
+        {name: "Mr. Amar Singh Meena", affiliation: ssduLabel},
     ]
 }
 
@@ -185,7 +187,7 @@ export const advisoryCommittee = [
 
 export const studentCommittee = {
     core: [
-        {name: "Devesh Kumar Mishara", image: devesh},
+        {name: "Devesh Kumar Mishra", image: devesh},
         {name: "Bhavna Joshi", image:bhavnajoshi},
         {name: "Devansh Gahlawat", image: devansh},
         {name: "Manu Agarwal", image:manu},

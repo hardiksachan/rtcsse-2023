@@ -11,20 +11,20 @@ export default function StudentOrganisingMembers() {
                 <div className="mt-6 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4">
                     {studentCommittee.core.map(function (member) {
                         return (
-                            <StudentProfile member={member} small={false} />
+                            <StudentProfile member={member} small={true} />
                         )
                     })}
                 </div>
-                <h3 className="text-xl font-bold pt-6">Web Designing Committee</h3>
+                <h3 className="text-xl font-bold pt-6">Web Designing Team</h3>
                 <div className="mt-6 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4">
                     {studentCommittee.technical.map(function (member) {
                         return (
-                            <StudentProfile member={member} small={false} />
+                            <StudentProfile member={member} small={true} />
                         )
                     })}
                 </div>
                 <h3 className="text-xl font-bold pt-6">Student Organising Members</h3>
-                <div className="mt-6 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-5">
+                <div className="mt-6 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4">
                     {studentCommittee.others.map(function (member) {
                         return (
                             <StudentProfile member={member} small={true} />
@@ -40,8 +40,8 @@ function StudentProfile({member, small}) {
     return (
         <div
             className="block flex space-x-4 items-center font-medium bg-primary10 rounded px-6 py-3 my-2 md:mx-4 focus:outline-none focus:ring-0">
-            <Image src={member.image} width={small ? 48 : 72} className="rounded-full aspect-square object-cover" />
-            <p className={`${small ? "text-sm" : "text-lg"}`}>{member.name}</p>
+            <Image src={member.image} width={48} className="rounded-full aspect-square object-cover" />
+            <p className={`${"text-sm font-bold"}`}>{member.name}</p>
         </div>
     )
 }
