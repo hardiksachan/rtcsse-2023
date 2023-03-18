@@ -67,8 +67,8 @@ function ConferenceHeader({open, setOpen}) {
                                quality={100}/>
                     </a>
                     <div className="pl-6 hidden md:block ">
-                        <Link href="/register"
-                              className="p-3 my-auto px-6 pt-2 text-white bg-primaryRegular rounded-full baseline hover:bg-primary80"
+                        <Link href="#"
+                              className="p-3 my-auto px-6 pt-2 text-white bg-primaryRegular10 rounded-full baseline hover:bg-primary80"
                         >Register</Link>
                     </div>
                     <Image src={azadi} className="object-contain" alt="G20"
